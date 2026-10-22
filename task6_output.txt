@@ -1,0 +1,29 @@
+===== HARDWARE INFORMATION =====
+Student ID: 230103374
+Operating System: Windows 11
+CPU Model: AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD
+Logical CPU Cores: 16
+
+===== BENCHMARK CONFIGURATION =====
+Threads: 4
+Increments Per Thread: 2,000,000
+Expected Final Value: 8,000,000
+Forced Race Rounds: 100
+
+===== RACE CONDITION BENCHMARK =====
+Expected Final Value: 8,000,000
+Unsafe Actual Value: 7,999,700
+Lost Updates: 300
+Lost Percentage: 0.0037%
+
+===== SYNCHRONIZATION PERFORMANCE =====
+Unsafe Time: 527.23 ms
+Safe Time (Lock): 1060.21 ms
+Lock Penalty: 532.99 ms
+Slowdown: 2.01x
+
+===== VERIFICATION =====
+Safe Final Value: 8,000,000
+Safe Result Correct: True
+
+===== TASK 6 COMPLETED =====
