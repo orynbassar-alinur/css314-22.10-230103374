@@ -1,0 +1,35 @@
+============================================================
+TASK 3: PREFIX SCAN
+============================================================
+Student ID       : 230103374
+Array Size       : 2,000,000
+Logical Cores    : 16
+Physical Cores   : 8
+Threads Used     : 8
+
+Input array generated successfully.
+
+Compiling Numba functions...
+
+Running Serial Prefix Sum...
+Serial execution completed.
+
+Running Parallel Prefix Sum...
+Parallel execution completed.
+
+============================================================
+BENCHMARK RESULTS
+============================================================
+Student ID          : 230103374
+Array Size          : 2,000,000
+Threads Used        : 8
+------------------------------------------------------------
+Serial Time         : 4.220 ms
+Parallel Time       : 1.977 ms
+------------------------------------------------------------
+Speedup             : 2.13x
+------------------------------------------------------------
+Verification Status : PASS
+Full Array Match    : True
+Final Prefix Sum    : 10999046
+============================================================
