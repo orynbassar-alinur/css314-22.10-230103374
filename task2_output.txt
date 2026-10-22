@@ -1,0 +1,21 @@
+===== HARDWARE INFORMATION =====
+Student ID: 230103374
+Operating System: Windows 11
+CPU Model: AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD
+Logical CPU Cores: 16
+
+===== DATA GENERATION =====
+Array Size: 20,000,000
+Data Type: float64
+Random Seed: 230103374
+
+===== MULTI-CORE SCALING BENCHMARK =====
+Cores     Wall Time (ms)      Speedup        Amdahl Upper Bound  
+-----------------------------------------------------------------
+1         1805.62             1.00           1.00                
+2         1069.65             1.69           1.90                
+4         728.18              2.48           3.48                
+16        732.46              2.47           9.14                
+32        1263.18             1.43           12.55               
+
+===== TASK 2 COMPLETED =====
