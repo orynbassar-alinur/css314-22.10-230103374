@@ -1,0 +1,28 @@
+============================================================
+TASK 6: ATOMIC CAS VS OS MUTEX
+============================================================
+Student ID             : 230103374
+Threads                : 8
+Increments per Thread  : 1000000
+Total Operations       : 8000000
+
+Running Mutex benchmark...
+Running Atomic CAS benchmark...
+
+============================================================
+BENCHMARK RESULTS
+============================================================
+
+PRIMITIVE 1: OS LOCK
+Execution Time         : 328.343 ms
+Throughput             : 24364779.736 ops/sec
+Final Counter          : 8000000
+------------------------------------------------------------
+PRIMITIVE 2: ATOMIC CAS
+Execution Time         : 406.596 ms
+Throughput             : 19675540.499 ops/sec
+Final Counter          : 8000000
+------------------------------------------------------------
+Throughput Ratio       : 0.81x
+Verification Status    : PASS
+============================================================
