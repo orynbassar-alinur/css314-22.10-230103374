@@ -1,0 +1,38 @@
+===== HARDWARE INFORMATION =====
+Student ID: 230103374
+Operating System: Windows 11
+CPU Model: AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD
+Logical CPU Cores: 16
+Max Parallel Threads: 16
+
+===== BENCHMARK CONFIGURATION =====
+Array Size: 30,000,000
+Data Type: float64
+Repeats: 5
+Thread Counts: [1, 2, 16]
+
+===== KERNEL A: MEMORY-BOUND =====
+Cores     Time (ms)      Speedup        Efficiency     
+-------------------------------------------------------
+1         21.36          1.00           100.00%        
+2         14.37          1.49           74.31%         
+16        11.58          1.85           11.53%         
+
+===== KERNEL B: COMPUTE-BOUND =====
+Cores     Time (ms)      Speedup        Efficiency     
+-------------------------------------------------------
+1         474.03         1.00           100.00%        
+2         236.44         2.00           100.24%        
+16        57.82          8.20           51.24%         
+
+===== SCALING ANALYSIS =====
+Memory Kernel Speedup: 1.85x
+Compute Kernel Speedup: 8.20x
+Memory Kernel Efficiency: 11.53%
+Compute Kernel Efficiency: 51.24%
+
+===== BOTTLENECK CONCLUSION =====
+Kernel A (Memory-Bound) stalled in scaling.
+Likely cause: memory bandwidth saturation.
+
+===== TASK 7 COMPLETED =====
