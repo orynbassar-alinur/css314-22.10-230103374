@@ -1,0 +1,23 @@
+===== HARDWARE INFORMATION =====
+Student ID: 230103374
+Operating System: Windows 11
+CPU Model: AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD
+Physical CPU Cores: 8
+Logical CPU Cores: 16
+
+===== BENCHMARK CONFIGURATION =====
+Threads: 8
+Iterations Per Thread: 50,000,000
+Cache Line Size: 64 bytes
+
+===== FALSE SHARING BENCHMARK =====
+Unpadded Shared: 1.59 ms
+64-byte Padded:  0.96 ms
+Execution Ratio: 1.66x
+
+===== VERIFICATION =====
+Expected Count Per Thread: 50,000,000
+Unpadded Correct: True
+Padded Correct: True
+
+===== TASK 3 COMPLETED =====
