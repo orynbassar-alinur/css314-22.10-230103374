@@ -1,0 +1,28 @@
+===== HARDWARE INFORMATION =====
+Student ID: 230103374
+Operating System: Windows 11
+CPU Model: AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD
+Logical CPU Cores: 16
+Parallel Threads Used: 16
+
+===== BENCHMARK CONFIGURATION =====
+Operation: y[i] = 2.5 * x[i] + 1.5
+Array Sizes: [100, 1000, 10000, 100000, 1000000, 10000000]
+Repeats: 5
+Timing Method: Minimum wall-clock time
+
+===== SERIAL VS PARALLEL BENCHMARK =====
+N              Serial (ms)       Parallel (ms)     Speedup     Winner      
+---------------------------------------------------------------------------
+100            0.0006            0.0060            0.10        Serial      
+1,000          0.0007            0.0059            0.12        Serial      
+10,000         0.0021            0.0102            0.21        Serial      
+100,000        0.0193            0.0113            1.71        Parallel    
+1,000,000      0.7306            0.2661            2.75        Parallel    
+10,000,000     7.5065            6.1432            1.22        Parallel    
+
+===== CROSSOVER ANALYSIS =====
+Crossover detected between N = 10,000 and N = 100,000
+Parallel execution becomes faster at tested size N = 100,000
+
+===== TASK 5 COMPLETED =====
