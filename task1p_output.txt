@@ -1,0 +1,32 @@
+==================================================
+TASK 1: ROW-MAJOR VS COLUMN-MAJOR
+==================================================
+Student ID       : 230103374
+Logical Cores    : 16
+Physical Cores   : 8
+Threads Used     : 8
+
+Allocating 8000 x 8000 float64 matrix...
+Matrix Size      : 488.28 MB
+
+Compiling Numba functions...
+
+Running benchmarks...
+
+==================================================
+BENCHMARK RESULTS
+==================================================
+Student ID              : 230103374
+Logical Core Count      : 16
+Physical Core Count     : 8
+Parallel Threads Used   : 8
+--------------------------------------------------
+Mode A (Row-Major)      : 11.295 ms
+Mode B (Column-Major)   : 49.818 ms
+--------------------------------------------------
+Cache Penalty Factor    : 4.41x
+--------------------------------------------------
+Row Sum                 : 32003809.851097
+Column Sum              : 32003809.851097
+Results Match           : True
+==================================================
