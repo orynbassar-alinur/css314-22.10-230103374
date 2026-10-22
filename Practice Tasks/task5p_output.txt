@@ -1,0 +1,35 @@
+===========================================================================
+TASK 5: THREAD OVERSUBSCRIPTION THRESHOLD
+===========================================================================
+Student ID       : 230103374
+Physical Cores   : 8
+Logical Cores    : 16
+Total Tasks      : 10,000
+Hash Iterations  : 500
+Data Size        : 1024 bytes
+
+Pool Sizes       : [1, 4, 8, 16, 32, 128, 256]
+
+Running benchmarks...
+
+Testing pool size 1...
+Testing pool size 4...
+Testing pool size 8...
+Testing pool size 16...
+Testing pool size 32...
+Testing pool size 128...
+Testing pool size 256...
+
+=====================================================================================
+BENCHMARK RESULTS
+=====================================================================================
+Pool Size      Execution Time (ms)      Speedup        Status                   
+-------------------------------------------------------------------------------------
+1              2620.981                 1.00           xBASELINE                 
+4              2580.047                 1.02           xOK                       
+8              2620.191                 1.00           xDEGRADATION START        
+16             2736.219                 0.96           xSLOWER                   
+32             2772.778                 0.95           xSLOWER                   
+128            2833.500                 0.92           xSLOWER                   
+256            3019.850                 0.87           xSLOWER                   
+=====================================================================================
