@@ -1,0 +1,31 @@
+=================================================================
+TASK 4: IPC VS SHARED MEMORY TRANSFER
+=================================================================
+Student ID       : 230103374
+CPU Cores        : 16
+Repetitions      : 5
+
+Benchmarking N = 100,000...
+Path A (Pipe/Pickle)   : 0.987 ms
+Path B (Shared Memory) : 0.072 ms
+Speedup                : 13.79x
+
+Benchmarking N = 1,000,000...
+Path A (Pipe/Pickle)   : 7.615 ms
+Path B (Shared Memory) : 0.400 ms
+Speedup                : 19.06x
+
+Benchmarking N = 10,000,000...
+Path A (Pipe/Pickle)   : 89.921 ms
+Path B (Shared Memory) : 4.225 ms
+Speedup                : 21.28x
+
+=================================================================
+BENCHMARK RESULTS
+=================================================================
+Array Size     Pipe (ms)      Shared (ms)    Speedup     
+-----------------------------------------------------------------
+100,000        0.987          0.072          13.79       x
+1,000,000      7.615          0.400          19.06       x
+10,000,000     89.921         4.225          21.28       x
+=================================================================
