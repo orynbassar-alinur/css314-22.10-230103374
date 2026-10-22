@@ -1,0 +1,33 @@
+=======================================================
+TASK 2: PSEUDO-RANDOM GENERATOR STATE BOTTLENECK
+=======================================================
+Student ID          : 230103374
+Total Samples       : 40,000,000
+Threads             : 4
+Samples per Thread  : 10,000,000
+
+Running Shared PRNG benchmark...
+Shared PRNG completed.
+
+Running Independent PRNG benchmark...
+Independent PRNG completed.
+
+=======================================================
+BENCHMARK RESULTS
+=======================================================
+Student ID             : 230103374
+Total Samples          : 40,000,000
+Threads                : 4
+-------------------------------------------------------
+MODE A: SHARED PRNG
+Computed PI            : 3.1416508000
+Absolute Error         : 0.0000581464
+Wall Time              : 33691.577 ms
+-------------------------------------------------------
+MODE B: INDEPENDENT PRNG
+Computed PI            : 3.1419306000
+Absolute Error         : 0.0003379464
+Wall Time              : 28987.967 ms
+-------------------------------------------------------
+Speedup Factor         : 1.16x
+=======================================================
